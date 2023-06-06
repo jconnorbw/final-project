@@ -1,0 +1,85 @@
+/* This CSS file focuses on the implementation of the layout of the Navigation
+Bar and the general background (body). */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #080808;
+  --white: #fefefe;
+  --gray: #565656;
+  --teal: #006060;
+  --violetred: #a2106d;
+  --orange: #ffa500;
+  --ragin-beige: #fff5d7;
+  --coral-pink: #ff5e6c;
+  --sleuthe-yellow: #feb300;
+  --pink-leaf: #ffaaab;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2em;
+  color: var(--black);
+  background-color: var(--ragin-beige);
+  margin-top: 300px;
+}
+
+/* Sets the nav element fixed to the top, spanning the width of the browser. */
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: var(--coral-pink);
+}
+
+/* Gets rid of default bullet points in unordered list. */
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Allows list items to be displayed on top of each other for small viewing
+screens. */
+.nav-list-item {
+  display: block;
+}
+
+/* Gets rid of default link format and makes each anchor a block with padding
+that fits just right in a default mobile view. */
+.nav-link {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.nav-link:hover {
+  border-radius: 50%;
+  color: var(--ragin-beige);
+  background-color: var(--black);
+}
+
+/* Any viewing width greater than a small viewing screen size should keep the 
+links in the nav bar side by side and aligned to the right. */
+@media (min-width: 768px) {
+  body {
+    margin-top: 100px;
+  }
+
+  .navbar-container {
+    text-align: right;
+  }
+
+  .nav-link {
+    padding: 1.74rem;
+  }
+
+  .nav-list-item {
+    display: inline-block;
+  }
+}
