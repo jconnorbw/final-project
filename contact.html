@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
     <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <script defer src="../js/contact.js"></script>
   </head>
   <body>
     <header>
@@ -29,6 +32,102 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h1>Contact Me</h1>
+      <form class="form" action="/submit">
+        <h2 class="form-title">Let's Connect</h2>
+        <p class="directions">
+          If you have any questions or comments, please sign up and fill out the
+          items in the form below.
+        </p>
+        <label class="form-label" for="name">Name:</label>
+        <input
+          class="form-input"
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Full Name"
+        />
+        <br /><br />
+        <label class="form-label" for="username">Username:</label>
+        <input
+          class="form-input"
+          id="username"
+          type="text"
+          name="username"
+          placeholder="username"
+        />
+        <br /><br />
+        <label class="form-label" for="email">Email:</label>
+        <input
+          class="form-input"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="email@pdx.edu"
+        />
+        <br /><br />
+        <label class="form-label" for="password">Password:</label>
+        <input
+          class="form-input"
+          id="password"
+          type="password"
+          name="password"
+          placeholder="********"
+        />
+        <br /><br />
+        <label class="form-label" for="date">Date of birth:</label>
+        <input class="form-input" id="date" type="date" name="date" />
+        <br /><br />
+        <label class="form-label" for="comment">Comment:</label>
+        <textarea
+          class="form-input"
+          id="comment"
+          type="text"
+          name="comment"
+          placeholder="Please write any questions or comments here."
+          rows="4"
+        ></textarea>
+        <br /><br />
+        <fieldset class="fieldset">
+          <legend class="legend">Pronouns</legend>
+          <input
+            class="radio"
+            type="radio"
+            name="pronouns"
+            id="she/her"
+            value="She/her"
+          />
+          <label class="pronouns" for="she/her">She/her</label>
+          <input
+            class="radio"
+            type="radio"
+            name="pronouns"
+            id="he/him"
+            value="He/him"
+          />
+          <label class="pronouns" for="he/him">He/him</label>
+          <input
+            class="radio"
+            type="radio"
+            name="pronouns"
+            id="they/them"
+            value="They/them"
+          />
+          <label class="pronouns" for="they/them">They/them</label>
+          <input
+            class="radio"
+            type="radio"
+            name="pronouns"
+            id="other"
+            value="I prefer not to say"
+          />
+          <label class="pronouns" for="other">I prefer not to say</label>
+        </fieldset>
+        <br />
+        <button class="submit" type="submit" value="Submit">Submit</button>
+        <button class="reset" type="reset" value="Reset">Reset</button>
+      </form>
+    </main>
   </body>
 </html>

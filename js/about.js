@@ -8,8 +8,6 @@ let main = document.querySelector("main");
 // Initialize and append a header to the DOM
 let sectionHeader = document.createElement("h1");
 sectionHeader.textContent = "About Me";
-sectionHeader.style.fontSize = "3em";
-sectionHeader.style.textAlign = "center";
 main.append(sectionHeader);
 
 // - - - - - Professional Section - - - - -

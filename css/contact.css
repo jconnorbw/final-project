@@ -1,0 +1,90 @@
+/* This CSS file implements the layout for the Contact section. */
+
+form {
+  width: 100%;
+}
+
+/* Guarantees the form to be centered at all times. */
+.form {
+  display: block;
+  margin: auto;
+  padding: 2rem 1rem;
+  border-style: solid;
+  border-radius: 2%;
+  border-color: var(--pink-leaf);
+}
+
+.form-title {
+  margin: 0;
+  color: var(--coral-pink);
+}
+
+.directions {
+  display: block;
+  margin: 0;
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+.form-label {
+  float: left;
+  width: 40%;
+}
+
+/* Stretches the input boxes to a comfortable size for users. */
+.form-input {
+  width: 60%;
+}
+
+/* Removes the typical border from a fieldset element. */
+.fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.legend {
+  font-weight: bold;
+}
+
+.radio {
+  display: block;
+  float: left;
+}
+
+.pronouns {
+  display: block;
+}
+
+/* Changes submit button format and allows for another button to be next to it. */
+.submit {
+  display: inline-block;
+  width: 49.5%;
+  color: var(--white);
+  background-color: var(--coral-pink);
+  padding: 0.5rem;
+}
+
+.submit:hover {
+  color: var(--black);
+  background-color: var(--sleuthe-yellow);
+}
+
+/* Changes reset button format and sits to the right in its layout.*/
+.reset {
+  float: right;
+  width: 49.5%;
+  background-color: var(--white);
+  padding: 0.5rem;
+}
+
+.reset:hover {
+  background-color: lightgrey;
+}
+
+/* When we have a large enough viewing screen, we do not want the form to
+span the entire screen anymore, so we set a fixed width. */
+@media (min-width: 640px) {
+  form {
+    width: 600px;
+  }
+}

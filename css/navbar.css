@@ -1,5 +1,5 @@
 /* This CSS file focuses on the implementation of the layout of the Navigation
-Bar and the general background (body). */
+Bar and the general content (body and headers). */
 
 * {
   box-sizing: border-box;
@@ -16,6 +16,11 @@ Bar and the general background (body). */
   --coral-pink: #ff5e6c;
   --sleuthe-yellow: #feb300;
   --pink-leaf: #ffaaab;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
 }
 
 body {

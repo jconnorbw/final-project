@@ -1,3 +1,7 @@
+/* This CSS file implements the layout for the About section. */
+
+/* This will make it so contents within the container lay vertically on top of
+each other. */
 .container {
   display: flex;
   flex-direction: column;
@@ -19,6 +23,8 @@
   padding: 0 10px;
 }
 
+/* When we have reached a large enough viewing screen, we want the contents
+within the container to lay horizontally side by side. */
 @media (min-width: 768px) {
   .container {
     flex-direction: row;
