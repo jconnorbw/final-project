@@ -5,8 +5,8 @@ each other. */
 .container {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 15px;
+  padding: 15px;
   border-style: solid;
   border-color: var(--pink-leaf);
 }
@@ -56,11 +56,20 @@ h2 {
   font-size: 0.9rem;
 }
 
-/* When we have reached a large enough viewing screen, we want the contents
+/* When we have reached a medium enough viewing screen, we want the contents
   within the container to lay horizontally side by side. */
 @media (min-width: 768px) {
   .container {
     flex-direction: row;
     align-items: center;
+  }
+}
+
+/* When we have reached a large viewing screen, we want the contents to stop
+spreading out.*/
+@media (min-width: 1024px) {
+  .container {
+    margin: 15px auto;
+    width: 994px;
   }
 }
