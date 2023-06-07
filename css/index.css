@@ -11,6 +11,11 @@ each other. */
   border-color: var(--pink-leaf);
 }
 
+/* A heading is recommended for sections, so this is not needed to be visible. */
+h2 {
+  display: none;
+}
+
 .section-title {
   text-align: center;
   color: var(--black);
