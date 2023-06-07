@@ -60,7 +60,7 @@ that fits just right in a default mobile view. */
   display: block;
   padding: 1rem;
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
 }
 
 .nav-link:hover {
