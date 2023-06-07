@@ -8,10 +8,6 @@ Bar and the general content (body and headers). */
 :root {
   --black: #080808;
   --white: #fefefe;
-  --gray: #565656;
-  --teal: #006060;
-  --violetred: #a2106d;
-  --orange: #ffa500;
   --ragin-beige: #fff5d7;
   --coral-pink: #ff5e6c;
   --sleuthe-yellow: #feb300;
@@ -67,7 +63,7 @@ that fits just right in a default mobile view. */
   display: block;
   padding: 1rem;
   text-decoration: none;
-  color: var(--white);
+  color: var(--black);
 }
 
 .nav-link:hover {

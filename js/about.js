@@ -90,7 +90,7 @@ let introPersonal = document.createElement("section");
 
 // Initialize a subheader to introduce this section.
 let subheader = document.createElement("h2");
-subheader.style.color = "var(--coral-pink)";
+subheader.style.color = "var(--black)";
 subheader.textContent = "A little more about me...";
 introPersonal.append(subheader);
 

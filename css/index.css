@@ -13,7 +13,7 @@ each other. */
 
 .section-title {
   text-align: center;
-  color: var(--coral-pink);
+  color: var(--black);
 }
 
 .section-description {
@@ -31,8 +31,8 @@ each other. */
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  color: var(--white);
-  background-color: var(--coral-pink);
+  color: var(--black);
+  background-color: var(--pink-leaf);
 }
 
 .button:hover {

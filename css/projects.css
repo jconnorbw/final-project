@@ -11,7 +11,7 @@
 
 .cards-section {
   text-align: center;
-  color: var(--coral-pink);
+  color: var(--black);
 }
 
 /* Default the images to display as centered blocks for mobile view. */
@@ -30,8 +30,8 @@
   width: 100%;
   text-align: center;
   text-decoration: none;
-  color: var(--white);
-  background-color: var(--coral-pink);
+  color: var(--black);
+  background-color: var(--pink-leaf);
 }
 
 .cards-button:hover {
