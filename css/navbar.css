@@ -31,6 +31,13 @@ body {
   margin-top: 300px;
 }
 
+.intro {
+  text-align: center;
+  font-style: italic;
+  margin: 1rem;
+  padding: 1rem;
+}
+
 /* Sets the nav element fixed to the top, spanning the width of the browser. */
 .navbar-container {
   position: fixed;

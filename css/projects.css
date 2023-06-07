@@ -1,12 +1,5 @@
 /* This CSS file implements the layout for the Projects section. */
 
-.projects-intro {
-  text-align: center;
-  font-style: italic;
-  margin: 1rem;
-  padding: 1rem;
-}
-
 /* Default the cards to display as blocks for mobile view. */
 .cards {
   display: block;

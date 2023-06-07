@@ -1,0 +1,61 @@
+/* This CSS file implements the layout for the Index or Home section. */
+
+/* This will make it so contents within the container lay vertically on top of
+each other. */
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  border-style: solid;
+  border-color: var(--pink-leaf);
+}
+
+.section-title {
+  text-align: center;
+  color: var(--coral-pink);
+}
+
+.section-description {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Create a button for the anchor change its color when hovered over. */
+.button {
+  display: block;
+  border: 0;
+  margin: 10px auto;
+  padding: 1rem;
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: var(--white);
+  background-color: var(--coral-pink);
+}
+
+.button:hover {
+  color: var(--black);
+  background-color: var(--sleuthe-yellow);
+}
+
+.img {
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 25%;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* When we have reached a large enough viewing screen, we want the contents
+  within the container to lay horizontally side by side. */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+}

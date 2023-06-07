@@ -1,12 +1,5 @@
 /* This CSS file implements the layout for the Previous Work section. */
 
-.previous-work-intro {
-  text-align: center;
-  font-style: italic;
-  margin: 1rem;
-  padding: 1rem;
-}
-
 /* Initialize grid areas to be used with the grid template areas. */
 .education {
   grid-area: education;
