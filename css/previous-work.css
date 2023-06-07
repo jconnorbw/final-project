@@ -1,0 +1,89 @@
+/* This CSS file implements the layout for the Previous Work section. */
+
+.previous-work-intro {
+  text-align: center;
+  font-style: italic;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* Initialize grid areas to be used with the grid template areas. */
+.education {
+  grid-area: education;
+}
+
+.work {
+  grid-area: work;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+/* Display a grid where the default is one column with three rows of content. */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+  grid-template-areas:
+    "education"
+    "work"
+    "skills";
+}
+
+.grid-item {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border-style: solid;
+  border-color: var(--pink-leaf);
+}
+
+.section-title {
+  color: var(--coral-pink);
+}
+
+.section-description {
+  text-align: left;
+}
+
+/* Change the bullet point style for our lists. */
+.list {
+  list-style-type: circle;
+}
+
+.list-item {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.sub-list {
+  font-size: medium;
+  font-weight: lighter;
+}
+
+/* If the viewing screen is medium to large, we want to change the layout to 
+have two columns and two rows, with the bottom row content spanning two columns. */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "education    work"
+      "skills       skills";
+  }
+}
+
+/* If the viewing screen is more than large, we want to change the layout to 
+have three columns and one row. */
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "education    work    skills";
+  }
+}
