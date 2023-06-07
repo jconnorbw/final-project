@@ -21,7 +21,7 @@ bioProfessional.setAttribute("class", "container");
 let professionalPhoto = document.createElement("img");
 professionalPhoto.setAttribute("class", "img");
 
-professionalPhoto.src = "../images/connor-work-photo.jpg";
+professionalPhoto.src = "images/connor-work-photo.jpg";
 professionalPhoto.alt = "Connor wearing professional clothes";
 bioProfessional.append(professionalPhoto);
 
@@ -123,7 +123,7 @@ bioPersonal.append(introPersonal);
 let personalPhoto = document.createElement("img");
 personalPhoto.setAttribute("class", "img");
 
-personalPhoto.src = "../images/connor-and-dogs.png";
+personalPhoto.src = "images/connor-and-dogs.png";
 personalPhoto.alt = "Connor and his two dogs";
 bioPersonal.append(personalPhoto);
 
