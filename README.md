@@ -1,5 +1,3 @@
 # Final-Project: Professional Website
 
 This is HTML, CSS, and JavaScript code that creates a Professional Website for the CS 563 - Intro to Web Development course at Portland State University. This Professional Website consists of a Home, About, Previous Work, Projects, and Contact section, all of which can be navigated to with an implemented Navbar. The index.html file is the website's Home section and the website is run through it, meaning GitHub searches for an index.html in order to deploy a website. The About section introduces myself professionally and personally. The Previous Work section outlines my previous work and experience as well as the skills I have attained over the years. The Projects section describes three projects I have previously worked on in school at Portland State University. The Contact section includes a contact form, which outputs inputted information in a console.log format through JavaScript.
-
-This Professional Website's can be run, or deployed, by visiting the deployed GitHub page at https://jconnorbw.github.io/final-project/
